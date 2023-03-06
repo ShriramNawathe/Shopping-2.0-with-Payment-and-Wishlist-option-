@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myShop</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
+
+.navbar .links {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+
+  background-color: black;
+  border-bottom: 1px solid white;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+nav .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .nav-items a {
+  margin: 0 1rem;
+}
+
+a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffff;
+}
+
+.signup {
+  margin: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signup-title {
+  margin: 20px 0 20px 0;
+  font-size: 30px;
+}
+
+div input {
+  margin: 10px 0 10px 0;
+  padding: 5px;
+  width: 90vw;
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.greet p {
+  padding: 10px 0px;
+}
+    </style>
+  </head>
+  <body>
+  
+    <nav>
+      <div class="brand">
+        <a href="#">MyShop.</a>
+      </div>
+      <div class="nav-items">
+        <a href="#">Home</a>
+        <a href="../login.html">Login</a>
+        <a href="../index.html">Signup</a>
+      </div>
+    </nav>
+
+    <div class="signup">
+      <div class="signup-title">
+        <p>SignUp Portal</p>
+      </div>
+      <div class="signUpForm">
+        <form>
+          <div class="fname">
+            <input type="text" name="fname" id="fname" placeholder="First Name" />
+          </div>
+          <div class="lname">
+            <input type="text" name="lname" id="lname" placeholder="Last Name" />
+          </div>
+          <div class="email">
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </div>
+          <div class="password">
+            <input type="password" name="password" id="password" placeholder="Password" />
+          </div>
+          <div class="cpassword">
+            <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" />
+          </div>
+          <div class="signupBtn">
+        
+            <input onclick="signup()" type="button" class="btn" value="SignUp" />
+          </div>
+        </form>
+        <div class="mgs"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
